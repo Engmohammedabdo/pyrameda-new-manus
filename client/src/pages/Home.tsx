@@ -245,9 +245,9 @@ export default function Home() {
                 لماذا نحن
               </a>
               <Link href="/portfolio">
-                <a className="text-sm text-white/75 hover:text-white transition-colors">
+                <span className="text-sm text-white/75 hover:text-white transition-colors cursor-pointer">
                   معرض الأعمال
-                </a>
+                </span>
               </Link>
               <a href="#pricing" className="text-sm text-white/75 hover:text-white transition-colors">
                 الباقات
@@ -258,9 +258,11 @@ export default function Home() {
               <a href="#faqs" className="text-sm text-white/75 hover:text-white transition-colors">
                 الأسئلة
               </a>
-              <a href="#contact" className="text-sm text-white/75 hover:text-white transition-colors">
-                تواصل
-              </a>
+              <Link href="/contact">
+                <span className="text-sm text-white/75 hover:text-white transition-colors cursor-pointer">
+                  اتصل بنا
+                </span>
+              </Link>
             </div>
 
             {/* CTA Button */}
