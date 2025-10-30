@@ -1,0 +1,14 @@
+# robots.txt for Pyramidia Marketing Agency
+
+User-agent: *
+Allow: /
+
+# Disallow admin pages (if any)
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://pyramedia.info/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
