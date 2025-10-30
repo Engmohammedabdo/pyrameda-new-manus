@@ -400,19 +400,19 @@ export default function Contact() {
               <h4 className="font-bold mb-4">روابط سريعة</h4>
               <div className="space-y-2 text-sm">
                 <Link href="/">
-                  <a className="text-muted-foreground hover:text-foreground transition-colors block">
+                  <span className="text-muted-foreground hover:text-foreground transition-colors block cursor-pointer">
                     الرئيسية
-                  </a>
+                  </span>
                 </Link>
                 <Link href="/portfolio">
-                  <a className="text-muted-foreground hover:text-foreground transition-colors block">
+                  <span className="text-muted-foreground hover:text-foreground transition-colors block cursor-pointer">
                     معرض الأعمال
-                  </a>
+                  </span>
                 </Link>
                 <Link href="/contact">
-                  <a className="text-muted-foreground hover:text-foreground transition-colors block">
+                  <span className="text-muted-foreground hover:text-foreground transition-colors block cursor-pointer">
                     اتصل بنا
-                  </a>
+                  </span>
                 </Link>
               </div>
             </div>

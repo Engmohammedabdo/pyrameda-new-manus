@@ -127,7 +127,7 @@ export default function Portfolio() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/">
-              <a className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+              <div className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer">
                 <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center text-white font-bold">
                   ▲
                 </div>
@@ -135,7 +135,7 @@ export default function Portfolio() {
                   <h1 className="font-bold text-lg">بيراميديا</h1>
                   <p className="text-xs text-muted-foreground">معرض الأعمال</p>
                 </div>
-              </a>
+              </div>
             </Link>
 
             <Link href="/#contact">

@@ -148,3 +148,7 @@
 - [x] إضافة FAQ سريعة (3 أسئلة)
 - [x] إضافة CTA للحصول على استشارة مجانية
 - [x] إضافة رابط Contact في Navigation
+
+## إصلاحات عاجلة 2
+- [x] إصلاح nested anchor tags في Portfolio
+- [x] إصلاح nested anchor tags في Contact
