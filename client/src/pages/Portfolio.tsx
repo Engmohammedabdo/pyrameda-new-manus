@@ -253,7 +253,11 @@ export default function Portfolio() {
                   {/* View Details Button */}
                   <Button
                     variant="outline"
-                    className="w-full rounded-[12px] group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all"
+                    onClick={() => {
+                      // في المستقبل: يمكن فتح modal أو الانتقال لصفحة تفاصيل
+                      alert(`تفاصيل المشروع: ${project.title}\n\nالعميل: ${project.client}\nالخدمات: ${project.services.join(', ')}\n\nهذه الميزة قيد التطوير. سيتم إضافة صفحة تفاصيل كاملة قريباً.`);
+                    }}
+                    className="w-full rounded-[12px] hover:bg-primary hover:text-white hover:border-primary transition-all cursor-pointer"
                   >
                     عرض التفاصيل
                     <ArrowRight className="w-4 h-4 mr-2" />

@@ -372,7 +372,7 @@ export default function Contact() {
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               احصل على استشارة مجانية واكتشف كيف يمكننا مساعدتك في تحقيق أهدافك التسويقية
             </p>
-            <Link href="/#contact">
+            <Link href="/#quote">
               <Button size="lg" className="bg-white text-purple-700 hover:bg-gray-100 border-0 text-lg px-8 py-6 h-auto">
                 احجز استشارة مجانية
               </Button>
