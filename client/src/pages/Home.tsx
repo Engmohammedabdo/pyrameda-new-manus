@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import QuoteRequestForm from "@/components/QuoteRequestForm";
 import {
   Megaphone,
   Video,
@@ -665,34 +666,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-card rounded-[28px] border border-border p-8 space-y-6 shadow-soft">
-              <div className="space-y-2">
-                <label className="text-sm font-medium">الاسم</label>
-                <Input placeholder="أدخل اسمك" className="bg-background rounded-[12px]" />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium">البريد الإلكتروني</label>
-                <Input type="email" placeholder="email@example.com" className="bg-background rounded-[12px]" />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium">رقم الهاتف</label>
-                <Input type="tel" placeholder="+971 XX XXX XXXX" className="bg-background rounded-[12px]" />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium">الرسالة</label>
-                <Textarea
-                  placeholder="أخبرنا عن مشروعك..."
-                  className="bg-background min-h-32 rounded-[12px]"
-                />
-              </div>
-
-              <Button className="w-full gradient-primary text-white font-semibold text-lg py-6 hover:opacity-90 transition-opacity border-0">
-                إرسال الرسالة
-              </Button>
-            </div>
+            <QuoteRequestForm />
           </div>
         </div>
       </section>
