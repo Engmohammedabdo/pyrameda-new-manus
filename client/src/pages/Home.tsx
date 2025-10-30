@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import QuoteRequestForm from "@/components/QuoteRequestForm";
+import { Link } from "wouter";
 import {
   Megaphone,
   Video,
@@ -243,9 +244,11 @@ export default function Home() {
               <a href="#why-us" className="text-sm text-white/75 hover:text-white transition-colors">
                 لماذا نحن
               </a>
-              <a href="#portfolio" className="text-sm text-white/75 hover:text-white transition-colors">
-                الأعمال
-              </a>
+              <Link href="/portfolio">
+                <a className="text-sm text-white/75 hover:text-white transition-colors">
+                  معرض الأعمال
+                </a>
+              </Link>
               <a href="#pricing" className="text-sm text-white/75 hover:text-white transition-colors">
                 الباقات
               </a>
@@ -465,7 +468,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {portfolio.map((item, index) => (
               <div
                 key={index}
@@ -483,6 +486,15 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/portfolio">
+              <Button size="lg" className="gradient-primary text-white border-0 text-lg px-8 py-6">
+                عرض جميع الأعمال
+                <ArrowRight className="w-5 h-5 mr-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
